@@ -1,4 +1,13 @@
+var gulp = require("gulp");
 var elixir = require('laravel-elixir');
+var shell = require('gulp-shell');
+
+elixir.extend("stylistPublish", function() {
+    gulp.task("stylistPublish", function() {
+        gulp.src("").pipe(shell("php ../../artisan stylist:publish"));
+    });
+    return this.queueTask("stylistPublish");
+});
 
 /*
  |--------------------------------------------------------------------------
@@ -16,9 +25,11 @@ elixir(function (mix) {
     /**
      * Compile less
      */
-    mix.less([
-        "AdminLTE.less"
-    ]);
+    mix
+        .less([
+            "AdminLTE.less"
+        ])
+        .stylistPublish();
 
     /**
      * Concat scripts
