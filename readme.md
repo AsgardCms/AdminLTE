@@ -1,4 +1,4 @@
-# AsgardCMS Demo theme
+# AdminLTE administration theme
 
 ## Installation
 
