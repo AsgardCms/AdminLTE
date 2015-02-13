@@ -2381,11 +2381,7 @@ Component: timeline
   border-bottom: 1px solid #fff;
 }
 .skin-blue .sidebar > .sidebar-menu > li {
-  border-top: 1px solid #fff;
   border-bottom: 1px solid #dbdbdb;
-}
-.skin-blue .sidebar > .sidebar-menu > li:first-of-type {
-  border-top: 1px solid #dbdbdb;
 }
 .skin-blue .sidebar > .sidebar-menu > li:first-of-type > a {
   border-top: 1px solid #fff;
@@ -2617,16 +2613,61 @@ Component: timeline
   border-bottom-left-radius: 0 !important;
   border-left: 0;
 }
+/* skin-dark navbar */
+.skin-dark .navbar {
+  background-color: #3c8dbc;
+}
+.skin-dark .navbar .nav a {
+  color: rgba(255, 255, 255, 0.8);
+}
+.skin-dark .navbar .nav > li > a:hover,
+.skin-dark .navbar .nav > li > a:active,
+.skin-dark .navbar .nav > li > a:focus,
+.skin-dark .navbar .nav .open > a,
+.skin-dark .navbar .nav .open > a:hover,
+.skin-dark .navbar .nav .open > a:focus {
+  background: rgba(0, 0, 0, 0.1);
+  color: #f6f6f6;
+}
+.skin-dark .navbar .navbar-right > .nav {
+  margin-right: 10px;
+}
+.skin-dark .navbar .sidebar-toggle .icon-bar {
+  background: rgba(255, 255, 255, 0.8);
+}
+.skin-dark .navbar .sidebar-toggle:hover .icon-bar {
+  background: #f6f6f6 !important;
+}
+/* skin-dark logo */
+.skin-dark .logo {
+  background-color: #367fa9;
+  color: #f9f9f9;
+}
+.skin-dark .logo > a {
+  color: #f9f9f9;
+}
+.skin-dark .logo:hover {
+  background: #357ca5;
+}
+/* skin-dark content header */
+.skin-dark .right-side > .content-header {
+  background: #fbfbfb;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* Skin-dark user panel */
+.skin-dark .user-panel > .image > img {
+  border: 1px solid #dfdfdf;
+}
+.skin-dark .user-panel > .info,
+.skin-dark .user-panel > .info > a {
+  color: #555555;
+}
 /* skin-dark sidebar */
 .skin-dark .sidebar {
   border-bottom: 1px solid #fff;
 }
 .skin-dark .sidebar > .sidebar-menu > li {
-  border-top: 1px solid #fff;
   border-bottom: 1px solid #dbdbdb;
-}
-.skin-dark .sidebar > .sidebar-menu > li:first-of-type {
-  border-top: 1px solid #dbdbdb;
 }
 .skin-dark .sidebar > .sidebar-menu > li:first-of-type > a {
   border-top: 1px solid #fff;
