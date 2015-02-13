@@ -17,32 +17,21 @@ elixir(function (mix) {
      * Compile less
      */
     mix.less([
-        "main.less"
+        "AdminLTE.less"
     ]);
 
     /**
      * Concat scripts
      */
-    mix.scripts([
-        '/vendor/jquery/dist/jquery.js',
-        '/vendor/bootstrap/dist/js/bootstrap.min.js',
-        '/vendor/prismjs/prism.js',
-        '/js/bootswatch.js'
-    ], null, 'resources');
+    //mix.scripts([
+    //
+    //], null, 'resources');
 
     /**
-     * Copy Bootstrap fonts
-     */
-    mix.copy(
-        'resources/vendor/bootstrap/fonts',
-        'assets/fonts'
-    );
-
-    /**
-     * Copy Fontawesome fonts
+     * Copy Font Awesome fonts
      */
     mix.copy(
         'resources/vendor/font-awesome/fonts',
-        'assets/fonts'
+        'assets/css/fonts'
     );
 });
