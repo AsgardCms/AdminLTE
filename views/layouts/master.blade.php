@@ -33,10 +33,10 @@
             {{ $sitename }}
         <?php endif; ?>
     </a>
-    @include('core::partials.top-nav')
+    @include('partials.top-nav')
 </header>
 <div class="wrapper row-offcanvas row-offcanvas-left">
-    @include('core::partials.sidebar-nav')
+    @include('partials.sidebar-nav')
 
     <aside class="right-side">
         <!-- Content Header (Page header) -->
