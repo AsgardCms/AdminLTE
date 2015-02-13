@@ -1,5 +1,5 @@
-var gulp = require("gulp");
 var elixir = require('laravel-elixir');
+var gulp = require("gulp");
 var shell = require('gulp-shell');
 
 elixir.extend("stylistPublish", function() {
