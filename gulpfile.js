@@ -6,6 +6,9 @@ elixir.extend("stylistPublish", function() {
     gulp.task("stylistPublish", function() {
         gulp.src("").pipe(shell("php ../../artisan stylist:publish"));
     });
+
+    this.registerWatcher("stylistPublish", "**/*.less");
+
     return this.queueTask("stylistPublish");
 });
 
