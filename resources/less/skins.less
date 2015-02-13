@@ -1,11 +1,11 @@
 
-/* 
+/*
     Skins
     -----
 */
 
-/* 
-    Skin Blue 
+/*
+    Skin Blue
     ---------
 */
 
@@ -39,7 +39,7 @@
     .sidebar {
         border-bottom: 1px solid #fff;
     }
-    // the menu 
+    // the menu
     .sidebar > .sidebar-menu > li {
         border-top: 1px solid #fff;
         border-bottom: 1px solid @sidebar-light-border;
@@ -56,7 +56,7 @@
         //Hover and active states
         > a:hover, &.active > a {
             color: #222;
-            background: @sidebar-light-hover-bg;            
+            background: @sidebar-light-hover-bg;
         }
 
         > .treeview-menu {
@@ -65,7 +65,7 @@
         }
     }
 
-    // Sidebar color (Both .wrapper and .left-side are responsible for sidebar bg color) 
+    // Sidebar color (Both .wrapper and .left-side are responsible for sidebar bg color)
     .left-side {
         background: @sidebar-light-bg;
         -webkit-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
@@ -154,7 +154,7 @@
     .sidebar {
         border-bottom: 1px solid #333;
     }
-    // the menu 
+    // the menu
     .sidebar > .sidebar-menu > li {
         border-top: 1px solid #333;
         border-bottom: 0px solid #444;
@@ -171,7 +171,7 @@
         //Hover and active states
         > a:hover, &.active > a {
             color: #f6f6f6;
-            background: #444;            
+            background: #444;
         }
 
         > .treeview-menu {
@@ -207,16 +207,16 @@
         margin: 10px 10px;
         input[type="text"], .btn {
             box-shadow: none;
-            background-color: rgba(255,255,255, 0.1);   
+            background-color: rgba(255,255,255, 0.1);
             border: 0 solid rgba(255,255,255, 0.1);
             height: 35px;
             outline: none;
         }
         input[type="text"]{
-            color: #666;            
+            color: #666;
             .border-radius(2px, 0, 2px, 0)!important;
             &:focus, &:focus + .input-group-btn .btn {
-                background-color: #444;                
+                background-color: #444;
                 border: 0;
             }
             &:focus + .input-group-btn .btn {
@@ -229,4 +229,89 @@
             border-left: 0;
         }
     }
+}
+
+
+/* skin-dark sidebar */
+.skin-dark {
+  .sidebar {
+    border-bottom: 1px solid #fff;
+  }
+  // the menu
+  .sidebar > .sidebar-menu > li {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid @sidebar-light-border;
+
+    &:first-of-type {
+      border-top: 1px solid @sidebar-light-border;
+      > a {
+        border-top: 1px solid #fff;
+      }
+    }
+    > a {
+      margin-right: 1px;
+    }
+    //Hover and active states
+    > a:hover, &.active > a {
+      color: #222;
+      background: @sidebar-light-hover-bg;
+    }
+
+    > .treeview-menu {
+      margin: 0 1px;
+      background: @body-bg;
+    }
+  }
+
+  // Sidebar color (Both .wrapper and .left-side are responsible for sidebar bg color)
+  .left-side {
+    background: @sidebar-light-bg;
+    -webkit-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07);
+  }
+
+  .sidebar a {
+    color: @sidebar-light-font;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  // skin blue treeview-menu
+  .treeview-menu {
+    > li {
+      > a {color: #777;}
+      &.active > a, > a:hover {
+        color: #111;
+      }
+    }
+  }
+
+  .sidebar-form {
+    .border-radius(2px);
+    border: 1px solid @sidebar-light-border;
+    margin: 10px 10px;
+    input[type="text"], .btn {
+      box-shadow: none;
+      background-color: #fafafa;
+      border: 1px solid #fafafa;
+      height: 35px;
+
+    }
+    input[type="text"]{
+      color: #666;
+      .border-radius(2px, 0, 2px, 0)!important;
+      &:focus, &:focus + .input-group-btn .btn {
+        background-color: #fff;
+        color: #666;
+      }
+      &:focus + .input-group-btn .btn {
+        border-left-color: #fff;
+      }
+    }
+    .btn {
+      color: #999;
+      .border-radius(0, 2px, 0, 2px)!important;
+    }
+  }
 }
