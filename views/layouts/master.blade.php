@@ -27,7 +27,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="skin-dark">
+<body class="skin-dark" style="padding-bottom: 0 !important;">
 <header class="header">
 
     @include('partials.top-nav')
