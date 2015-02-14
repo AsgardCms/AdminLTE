@@ -12,6 +12,7 @@
     {!! Theme::style('css/vendor/font-awesome.min.css') !!}
     {!! Theme::style('css/vendor/ionicons.min.css') !!}
     {!! Theme::style('css/vendor/alertify/alertify.core.css') !!}
+    {!! Theme::style('css/vendor/alertify/alertify.default.css') !!}
     {!! Theme::style('css/vendor/datatables/dataTables.bootstrap.css') !!}
     <!-- Theme style -->
     {!! Theme::style('css/AdminLTE.css') !!}
