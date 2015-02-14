@@ -1887,10 +1887,13 @@ Component: timeline
 .callout.callout-info h4 {
   color: #3A87AD;
 }
-/* 
+/*
     Component: alert
 ------------------------
 */
+.badge-success {
+  background: #5cb85c;
+}
 .alert {
   padding-left: 30px;
   margin-left: 15px;
