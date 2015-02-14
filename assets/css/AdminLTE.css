@@ -2488,14 +2488,14 @@ Component: timeline
 }
 /* skin-dark logo */
 .skin-dark .logo {
-  background-color: #367fa9;
+  background-color: #23536f;
   color: #f9f9f9;
 }
 .skin-dark .logo > a {
   color: #f9f9f9;
 }
 .skin-dark .logo:hover {
-  background: #357ca5;
+  background: #22506b;
 }
 /* skin-dark content header */
 .skin-dark .right-side > .content-header {
