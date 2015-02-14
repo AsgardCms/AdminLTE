@@ -1,6 +1,24 @@
 /* skin-dark navbar */
+.skin-dark {
+  .header {
+    z-index: 0;
+    background: darken(@primary, 20%);
+  }
+  .navbar {
+    transition: all .2s ease-in-out;
+  }
+  .navbar.collapse-left {
+    margin-left: 0;
+  }
+}
 .skin-dark .navbar {
   .navbar-variant(@primary);
+}
+@media screen and (max-width: @screen-sm) {
+  .skin-dark .navbar .navbar-right {
+    margin-top: -50px;
+    margin-left: 25px;
+  }
 }
 /* skin-dark logo */
 .skin-dark .logo {
