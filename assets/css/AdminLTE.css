@@ -627,8 +627,15 @@ body > .header .logo .icon {
   color: #f9f9f9;
 }
 /*Drodown in navbars*/
+.skin-dark .navbar .dropdown-menu > li > a,
 .skin-blue .navbar .dropdown-menu > li > a {
   color: #444444;
+}
+.skin-dark .navbar .dropdown-menu > li > a:hover,
+.skin-blue .navbar .dropdown-menu > li > a:hover,
+.skin-dark .navbar .dropdown-menu > li.active > a,
+.skin-blue .navbar .dropdown-menu > li.active > a {
+  color: white;
 }
 /*
     Navbar custom dropdown menu
@@ -2541,6 +2548,9 @@ Component: timeline
 .skin-dark .user-panel > .info,
 .skin-dark .user-panel > .info > a {
   color: #555555;
+}
+.dropdown-menu li a {
+  color: black;
 }
 /* skin-dark sidebar */
 .skin-dark .logo {
