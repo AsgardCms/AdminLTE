@@ -26,7 +26,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="skin-blue">
+<body class="skin-dark">
 <header class="header">
     <a href="{{ URL::route('dashboard.index') }}" class="logo">
         <?php if (isset($sitename)): ?>
