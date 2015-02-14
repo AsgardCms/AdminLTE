@@ -2043,6 +2043,23 @@ Component: timeline
 .pagination > li:last-of-type a {
   border-radius: 0;
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 30px;
+  background-color: #f5f5f5;
+}
+.footer > .container {
+  margin-right: 0;
+  margin-left: 0;
+}
+.footer p {
+  margin-bottom: 0;
+}
+.footer a {
+  cursor: pointer;
+}
 /*
     Component: Mailbox
 */
