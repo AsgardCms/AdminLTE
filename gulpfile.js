@@ -8,6 +8,7 @@ elixir.extend("stylistPublish", function() {
     });
 
     this.registerWatcher("stylistPublish", "**/*.less");
+    //this.registerWatcher("stylistPublish", "**/*.js");
 
     return this.queueTask("stylistPublish");
 });
@@ -38,14 +39,16 @@ elixir(function (mix) {
      * Concat scripts
      */
     //mix.scripts([
-    //
-    //], null, 'resources');
+    //    "app.js"
+    //]);
 
     /**
      * Copy Font Awesome fonts
      */
-    mix.copy(
-        'resources/vendor/font-awesome/fonts',
-        'assets/css/fonts'
-    );
+    mix
+        .copy(
+            'resources/vendor/font-awesome/fonts',
+            'assets/css/fonts'
+        )
+        .copy('resources/js/app.js', 'assets/js/app.js');
 });
