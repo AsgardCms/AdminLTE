@@ -21,9 +21,9 @@
                 </a>
                 <ul class="dropdown-menu language-menu">
                     @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                        <li {{ App::getLocale() == $localeCode ? ' class="active"' : '' }}>
-                            <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
-                                {{{ $properties['native'] }}}
+                        <li class="{{ App::getLocale() == $localeCode ? 'active' : '' }}">
+                            <a rel="alternate" lang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+                                {!! $properties['native'] !!}
                             </a>
                         </li>
                     @endforeach
