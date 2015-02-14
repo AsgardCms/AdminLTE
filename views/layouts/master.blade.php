@@ -55,6 +55,7 @@
 {!! Theme::script('js/vendor/datatables/jquery.dataTables.js') !!}
 {!! Theme::script('js/vendor/datatables/dataTables.bootstrap.js') !!}
 {!! Theme::script('js/vendor/jquery.slug.js') !!}
+<script src="{{ Module::asset('core:js/keypressAction.js') }}" type="text/javascript"></script>
 {!! Theme::script('js/app.js') !!}
 @section('scripts')
 @show
