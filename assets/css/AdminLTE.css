@@ -530,7 +530,6 @@ body > .header .logo .icon {
   display: block;
   font-size: 14px;
   margin: 0px 0px;
-  float: left;
 }
 .sidebar .sidebar-menu .treeview-menu > li > a > .fa,
 .sidebar .sidebar-menu .treeview-menu > li > a > .glyphicon,
