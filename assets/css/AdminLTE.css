@@ -2511,6 +2511,28 @@ Component: timeline
   color: #555555;
 }
 /* skin-dark sidebar */
+.skin-dark .navbar.collapse-left {
+  margin-left: 0;
+}
+.skin-dark .logo {
+  margin-top: -50px;
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 10px;
+  width: 220px;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 500;
+  height: 50px;
+  display: block;
+}
+.skin-dark .logo .icon {
+  margin-right: 10px;
+}
+.skin-dark .wrapper {
+  transition: all 2s ease-in-out;
+}
 .skin-dark .sidebar > .sidebar-menu > li {
   border-bottom: 1px solid #181818;
 }

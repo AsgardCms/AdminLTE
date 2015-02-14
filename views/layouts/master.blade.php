@@ -28,11 +28,7 @@
 </head>
 <body class="skin-dark">
 <header class="header">
-    <a href="{{ URL::route('dashboard.index') }}" class="logo">
-        <?php if (isset($sitename)): ?>
-            {{ $sitename }}
-        <?php endif; ?>
-    </a>
+
     @include('partials.top-nav')
 </header>
 <div class="wrapper row-offcanvas row-offcanvas-left">
