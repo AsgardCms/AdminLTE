@@ -503,6 +503,9 @@ body > .header .logo .icon {
   margin: 0;
   padding: 0;
 }
+.sidebar .sidebar-menu .append {
+  margin-top: -45px;
+}
 .sidebar .sidebar-menu > li {
   margin: 0;
   padding: 0;
@@ -521,6 +524,9 @@ body > .header .logo .icon {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.sidebar .sidebar-menu .treeview-menu .append {
+  margin-top: -30px;
 }
 .sidebar .sidebar-menu .treeview-menu > li {
   margin: 0;
