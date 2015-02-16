@@ -7,7 +7,7 @@
     </a>
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
-        {!! $sidebar->groupLess()->render() !!}
+        {!! $sidebar->withoutGroup()->render() !!}
     </section>
     <!-- /.sidebar -->
 </aside>
