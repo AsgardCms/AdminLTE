@@ -72,6 +72,7 @@
 </div><!-- ./wrapper -->
 
 {!! Theme::script('js/vendor/bootstrap.min.js') !!}
+{!! Theme::script('js/vendor/mousetrap.min.js') !!}
 {!! Theme::script('js/vendor/alertify/alertify.js') !!}
 {!! Theme::script('js/vendor/iCheck/icheck.min.js') !!}
 {!! Theme::script('js/vendor/datatables/jquery.dataTables.js') !!}
