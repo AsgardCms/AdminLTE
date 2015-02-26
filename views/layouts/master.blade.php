@@ -8,14 +8,9 @@
         @show
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    {!! Theme::style('css/vendor/bootstrap.min.css') !!}
-    {!! Theme::style('css/vendor/font-awesome.min.css') !!}
-    {!! Theme::style('css/vendor/ionicons.min.css') !!}
-    {!! Theme::style('css/vendor/alertify/alertify.core.css') !!}
-    {!! Theme::style('css/vendor/alertify/alertify.default.css') !!}
-    {!! Theme::style('css/vendor/datatables/dataTables.bootstrap.css') !!}
-    <!-- Theme style -->
-    {!! Theme::style('css/AdminLTE.css') !!}
+    @foreach($cssFiles as $css)
+        <link media="all" type="text/css" rel="stylesheet" href="{{ $css }}">
+    @endforeach
     {!! Theme::script('js/vendor/jquery.min.js') !!}
     @section('styles')
     @show
@@ -71,15 +66,10 @@
     </aside><!-- /.right-side -->
 </div><!-- ./wrapper -->
 
-{!! Theme::script('js/vendor/bootstrap.min.js') !!}
-{!! Theme::script('js/vendor/mousetrap.min.js') !!}
-{!! Theme::script('js/vendor/alertify/alertify.js') !!}
-{!! Theme::script('js/vendor/iCheck/icheck.min.js') !!}
-{!! Theme::script('js/vendor/datatables/jquery.dataTables.js') !!}
-{!! Theme::script('js/vendor/datatables/dataTables.bootstrap.js') !!}
-{!! Theme::script('js/vendor/jquery.slug.js') !!}
-<script src="{{ Module::asset('core:js/keypressAction.js') }}" type="text/javascript"></script>
-{!! Theme::script('js/app.js') !!}
+@foreach($jsFiles as $js)
+    <script src="{{ $js }}" type="text/javascript"></script>
+@endforeach
+
 @section('scripts')
 @show
 </body>
