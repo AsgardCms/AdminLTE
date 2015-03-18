@@ -45,29 +45,8 @@
             @include('flash::message')
             @yield('content')
         </section><!-- /.content -->
-
-        <footer class="footer">
-            <div class="container">
-                @yield('footer')
-
-                <div class="modal fade" id="keyboardShortcutsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">
-                                    {{ trans('core::core.general.available keyboard shortcuts') }}
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                @yield('shortcuts')
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </aside><!-- /.right-side -->
+    @include('partials.footer')
 </div><!-- ./wrapper -->
 
 @foreach($jsFiles as $js)
