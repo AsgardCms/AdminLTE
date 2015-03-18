@@ -22,15 +22,19 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="skin-dark" style="padding-bottom: 0 !important;">
-<header class="header">
-
-    @include('partials.top-nav')
-</header>
-<div class="wrapper row-offcanvas row-offcanvas-left">
+<body class="skin-blue" style="padding-bottom: 0 !important;">
+<div class="wrapper">
+    <header class="main-header">
+        <a href="{{ URL::route('dashboard.index') }}" class="logo">
+            <?php if (isset($sitename)): ?>
+            {{ $sitename }}
+            <?php endif; ?>
+        </a>
+        @include('partials.top-nav')
+    </header>
     @include('partials.sidebar-nav')
 
-    <aside class="right-side">
+    <aside class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             @yield('content-header')
