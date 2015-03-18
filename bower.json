@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "font-awesome": "~4.0.3",
-    "admin-lte": "~2.0.5"
+    "admin-lte": "~2.0.5",
+    "iCheck": "~1.0.2"
   }
 }
