@@ -1,10 +1,3 @@
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        <b>Version</b> 1.0 beta
-    </div>
-    @yield('footer')
-</footer>
-
 <div class="modal fade" id="keyboardShortcutsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -20,3 +13,12 @@
         </div>
     </div>
 </div>
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0 beta
+    </div>
+
+    @yield('footer')
+    <strong>Copyright © {{ date('Y')}} <a href="http://asgardcms.com" target="_blank">AsgardCms</a></strong>
+</footer>
+
