@@ -32,7 +32,7 @@ elixir(function (mix) {
      */
     mix
         .less([
-            "AdminLTE.less"
+            "asgard.less"
         ])
         .stylistPublish();
 
