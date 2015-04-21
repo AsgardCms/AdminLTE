@@ -33,4 +33,5 @@ footer.main-footer p.text-muted {
 }
 .checkbox label div {
   margin-right: 5px;
+  margin-top: -2px;
 }
