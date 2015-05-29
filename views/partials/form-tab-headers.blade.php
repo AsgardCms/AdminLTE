@@ -11,7 +11,7 @@
         <?php $class = ''; ?>
         <?php if (isset($fields)): ?>
             <?php foreach($fields as $field): ?>
-                <?php $class = $errors->has("{$locale}.{$field}") ? 'error' : '' ?>
+                <?php if($errors->has("{$locale}.{$field}")) $class = 'error' ?>
             <?php endforeach; ?>
         <?php endif; ?>
         <li class="{{ App::getLocale() == $locale ? 'active' : '' }} {{ $class }}">
