@@ -4,7 +4,7 @@ var elixir = require('laravel-elixir');
 var themeInfo = require('./theme.json');
 
 elixir.extend("stylistPublish", function() {
-    gulp.task("stylistPublish", function() {
+    gulp.task("stylistPublish", ['less', 'scripts'], function() {
         gulp.src("").pipe(shell("php ../../artisan stylist:publish "+themeInfo.name));
     });
 
