@@ -2,12 +2,10 @@
 
 ## Installation
 
-Add package to your `require` key in the `composer.json` file:
+Execute the following command in your terminal:
 
 ``` json
-"asgardcms/adminlte-theme": "dev-master"
+composer require asgardcms/adminlte-theme
 ```
-
-Followed by a composer update.
 
 You'll find the theme in the `Themes/` directory.
