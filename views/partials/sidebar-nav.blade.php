@@ -3,7 +3,7 @@
 
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
-        {!! $sidebar->render() !!}
+        {!! $sidebar !!}
     </section>
     <!-- /.sidebar -->
 </aside>
