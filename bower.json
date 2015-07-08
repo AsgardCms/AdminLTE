@@ -18,5 +18,8 @@
     "bootstrap": "~3.3.4",
     "gridstack": ">=0.2.2",
     "sisyphus": "~1.1"
+  },
+  "resolutions": {
+    "jquery": "~1.9.1"
   }
 }
