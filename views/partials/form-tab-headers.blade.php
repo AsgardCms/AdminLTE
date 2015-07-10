@@ -9,11 +9,9 @@
     <?php foreach (LaravelLocalization::getSupportedLocales() as $locale => $language): ?>
         <?php $i ++; ?>
         <?php $class = ''; ?>
-        <?php if (isset($fields)): ?>
-            <?php foreach($fields as $field): ?>
-                <?php if($errors->has("{$locale}.{$field}")) $class = 'error' ?>
-            <?php endforeach; ?>
-        <?php endif; ?>
+        <?php foreach ($errors->getMessages() as $field => $messages): ?>
+            <?php if (substr($field, 0, strpos($field, ".")) == $locale) $class = 'error' ?>
+        <?php endforeach ?>
         <li class="{{ App::getLocale() == $locale ? 'active' : '' }} {{ $class }}">
             <a href="#tab_{{ $i }}" data-toggle="tab">{{ trans('core::core.tab.'. strtolower($language['name'])) }}</a>
         </li>
