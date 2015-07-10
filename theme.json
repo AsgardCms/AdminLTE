@@ -1,5 +1,6 @@
 {
   "name": "AdminLTE",
   "description": "This is an administration theme",
-  "type": "backend"
+  "type": "backend",
+  "version": "1.2.0"
 }
