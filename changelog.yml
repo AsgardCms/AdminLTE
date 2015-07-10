@@ -1,0 +1,22 @@
+url: https://github.com/AsgardCms/AdminLTE
+versions:
+    "1.2.0":
+        added:
+            - Changelog file
+        changed:
+            - Automatic determination as to whether the current tab has form errors
+    "1.1.0":
+        changed:
+            - Making the skin configurable
+    "1.0.3":
+        changed:
+            - Adding a dynamic application version in admin footer
+    "1.0.2":
+        changed:
+            - Using new sidebar variable, no need to render in view
+    "1.0.1":
+        changed:
+            - Sisyphus, only work based on the current URI
+    "1.0.0":
+        changed:
+            - Initial release
