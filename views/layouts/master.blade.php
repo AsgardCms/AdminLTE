@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>
         @section('title')
-        Admin
+        {{ Setting::get('core::site-name') }} | Admin
         @show
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
