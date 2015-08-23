@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.4.0":
+        changed:
+            - Adding site name to titles in administration
     "1.3.0":
         changed:
             - Translating the top-nav
