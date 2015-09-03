@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <base src="{{ URL::asset('/') }}" />
     <meta charset="UTF-8">
     <title>
         @section('title')
@@ -9,7 +10,7 @@
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     @foreach($cssFiles as $css)
-        <link media="all" type="text/css" rel="stylesheet" href="{{ $css }}">
+        <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset($css) }}">
     @endforeach
     {!! Theme::script('js/vendor/jquery.min.js') !!}
     @section('styles')
@@ -50,7 +51,7 @@
 </div><!-- ./wrapper -->
 
 @foreach($jsFiles as $js)
-    <script src="{{ $js }}" type="text/javascript"></script>
+    <script src="{{ URL::asset($js) }}" type="text/javascript"></script>
 @endforeach
 
 @section('scripts')
