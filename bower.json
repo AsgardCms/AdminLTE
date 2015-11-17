@@ -17,7 +17,8 @@
     "iCheck": "~1.0.2",
     "bootstrap": "~3.3.4",
     "gridstack": ">=0.2.2",
-    "sisyphus": "~1.1"
+    "sisyphus": "~1.1",
+    "animate.css": ">=3.4"
   },
   "resolutions": {
     "jquery": "~1.9.1"
