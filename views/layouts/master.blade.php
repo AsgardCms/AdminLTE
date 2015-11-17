@@ -53,6 +53,15 @@
 @foreach($jsFiles as $js)
     <script src="{{ URL::asset($js) }}" type="text/javascript"></script>
 @endforeach
+<?php if (is_module_enabled('Notification')): ?>
+    <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
+    <script src="{{ Module::asset('notification:js/pusherNotifications.js') }}"></script>
+    <script>
+        $(".notifications-list").pusherNotifications({
+            pusherKey: '{{ env('PUSHER_KEY') }}'
+        });
+    </script>
+<?php endif; ?>
 
 @section('scripts')
 @show
