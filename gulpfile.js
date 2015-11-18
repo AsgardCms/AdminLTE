@@ -29,7 +29,7 @@ elixir(function (mix) {
     mix
         .less([
             "asgard.less"
-        ])
+        ], 'assets/css/asgard.css')
         .stylistPublish();
 
     /**
