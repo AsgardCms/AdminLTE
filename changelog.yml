@@ -1,5 +1,9 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.7.0":
+        changed:
+            - Extracting notifications area to partial in notifications module
+            - Sending the User id to the pusher notifications jquery plugin
     "1.6.0":
         added:
             - Section in header for notifications
