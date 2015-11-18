@@ -5,6 +5,9 @@ versions:
             - Section in header for notifications
         changed:
             - Updated to latest AdminLTE version (3.2.2)
+            - Upgrading Elixir version
+            - Using new Elixir custom task
+            - Moving assets to new expected location for Elixir 3
     "1.5.0":
         changed:
             - Allow installation in sub folder
