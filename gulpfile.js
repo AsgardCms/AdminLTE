@@ -47,5 +47,5 @@ elixir(function (mix) {
             'assets/vendor/font-awesome/fonts',
             'assets/css/fonts'
         )
-        .copy('resources/assets/js/app.js', 'assets/js/app.js');
+        .copy('resources/assets/js', 'assets/js');
 });
