@@ -64,7 +64,8 @@
     <script src="{{ Module::asset('notification:js/pusherNotifications.js') }}"></script>
     <script>
         $(".notifications-list").pusherNotifications({
-            pusherKey: '{{ env('PUSHER_KEY') }}'
+            pusherKey: '{{ env('PUSHER_KEY') }}',
+            loggedInUserId: {{ $currentUser->id }}
         });
     </script>
 <?php endif; ?>
