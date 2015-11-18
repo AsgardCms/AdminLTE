@@ -3,15 +3,11 @@ var shell = require('gulp-shell');
 var elixir = require('laravel-elixir');
 var themeInfo = require('./theme.json');
 
+var task = elixir.Task;
 elixir.extend("stylistPublish", function() {
-    gulp.task("stylistPublish", ['less', 'scripts'], function() {
-        gulp.src("").pipe(shell("php ../../artisan stylist:publish "+themeInfo.name));
-    });
-
-    this.registerWatcher("stylistPublish", "**/*.less");
-    //this.registerWatcher("stylistPublish", "**/*.js");
-
-    return this.queueTask("stylistPublish");
+    new task("stylistPublish", function() {
+        return gulp.src("").pipe(shell("php ../../artisan stylist:publish "+themeInfo.name));
+    }).watch("stylistPublish", "**/*.less");
 });
 
 /*
@@ -48,8 +44,8 @@ elixir(function (mix) {
      */
     mix
         .copy(
-            'resources/vendor/font-awesome/fonts',
+            'assets/vendor/font-awesome/fonts',
             'assets/css/fonts'
         )
-        .copy('resources/js/app.js', 'assets/js/app.js');
+        .copy('resources/assets/js/app.js', 'assets/js/app.js');
 });
