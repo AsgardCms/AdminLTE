@@ -6,8 +6,8 @@ var themeInfo = require('./theme.json');
 var task = elixir.Task;
 elixir.extend("stylistPublish", function() {
     new task("stylistPublish", function() {
-        return gulp.src("").pipe(shell("php ../../artisan stylist:publish "+themeInfo.name));
-    }).watch("stylistPublish", "**/*.less");
+        return gulp.src("").pipe(shell("php ../../artisan stylist:publish " + themeInfo.name));
+    }).watch("**/*.less");
 });
 
 /*
