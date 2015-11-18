@@ -13,6 +13,12 @@
         <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset($css) }}">
     @endforeach
     {!! Theme::script('js/vendor/jquery.min.js') !!}
+    <script>
+        var Asgard = {
+            backendUrl: '{{ config('asgard.core.core.admin-prefix') }}',
+            mediaGridCkEditor : '{{ route('media.grid.ckeditor') }}'
+        };
+    </script>
     @section('styles')
     @show
 
