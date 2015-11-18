@@ -13,7 +13,7 @@
   ],
   "dependencies": {
     "font-awesome": ">= 4.2",
-    "admin-lte": "~2.0.5",
+    "admin-lte": "~2.3",
     "iCheck": "~1.0.2",
     "bootstrap": "~3.3.4",
     "gridstack": ">=0.2.2",
