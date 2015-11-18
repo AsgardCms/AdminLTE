@@ -8,6 +8,7 @@ versions:
             - Upgrading Elixir version
             - Using new Elixir custom task
             - Moving assets to new expected location for Elixir 3
+            - Removing hardcoded backend URI in Ckeditor config file
     "1.5.0":
         changed:
             - Allow installation in sub folder
