@@ -54,6 +54,7 @@
         </section><!-- /.content -->
     </aside><!-- /.right-side -->
     @include('partials.footer')
+    @include('partials.right-sidebar')
 </div><!-- ./wrapper -->
 
 @foreach($jsFiles as $js)
