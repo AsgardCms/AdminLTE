@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.8.0":
+        changed:
+            - Styling the notiications
     "1.7.0":
         changed:
             - Extracting notifications area to partial in notifications module
