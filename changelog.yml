@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.9.0":
+        changed:
+            - Fixed the slugify scrift to work for multiple language inputs
     "1.8.0":
         changed:
             - Styling the notifications
