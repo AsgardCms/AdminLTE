@@ -1,4 +1,4 @@
-<aside class="control-sidebar control-sidebar-dark">
+<aside class="control-sidebar control-sidebar-dark" style="display:none">
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
         <li class="active">
             <a href="#sidebar-notifications" data-toggle="tab">
