@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.9.1":
+        changed:
+            - Made the right-sidebar hidden until it'll be needed for content
     "1.9.0":
         changed:
             - Fixed the slugify script to work for multiple language inputs
