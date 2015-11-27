@@ -1,6 +1,5 @@
 .idea/
 /node_modules
 /resources/vendor
-/assets/vendor
 /vendor
 composer.lock
