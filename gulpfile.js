@@ -39,13 +39,5 @@ elixir(function (mix) {
     //    "app.js"
     //]);
 
-    /**
-     * Copy Font Awesome fonts
-     */
-    mix
-        .copy(
-            'assets/vendor/font-awesome/fonts',
-            'assets/css/fonts'
-        )
-        .copy('resources/assets/js', 'assets/js');
+    mix.copy('resources/assets/js', 'assets/js');
 });
