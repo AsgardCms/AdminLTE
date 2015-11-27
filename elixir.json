@@ -3,5 +3,5 @@
   "assetsDir": "resources/",
   "cssOutput": "assets/css/",
   "jsOutput": "assets/js/",
-  "bowerDir": "resources/vendor/"
+  "bowerDir": "assets/vendor/"
 }
