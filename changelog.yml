@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.10.0":
+        changed:
+            - Cleaning up the asset management
     "1.9.1":
         changed:
             - Made the right-sidebar hidden until it'll be needed for content
