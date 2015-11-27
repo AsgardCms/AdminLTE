@@ -12,7 +12,7 @@
     @foreach($cssFiles as $css)
         <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset($css) }}">
     @endforeach
-    {!! Theme::script('js/vendor/jquery.min.js') !!}
+    {!! Theme::script('vendor/jquery/jquery.min.js') !!}
     <script>
         var Asgard = {
             backendUrl: '{{ config('asgard.core.core.admin-prefix') }}',
