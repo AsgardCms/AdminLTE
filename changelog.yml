@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.12.0":
+        added:
+            - Dropzone post url in Asgard global object
     "1.11.0":
         added:
             - Init pace.js for ajax requests
