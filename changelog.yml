@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.12.1":
+        changed:
+            - Extracting the Asgard javascript global definition to a partial
     "1.12.0":
         added:
             - Dropzone post url in Asgard global object
