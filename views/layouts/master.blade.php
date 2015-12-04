@@ -13,13 +13,7 @@
         <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset($css) }}">
     @endforeach
     {!! Theme::script('vendor/jquery/jquery.min.js') !!}
-    <script>
-        var Asgard = {
-            backendUrl: '{{ config('asgard.core.core.admin-prefix') }}',
-            mediaGridCkEditor : '{{ route('media.grid.ckeditor') }}',
-            dropzonePostUrl: '{{ route('api.media.store') }}'
-        };
-    </script>
+    @include('partials.asgard-globals')
     @section('styles')
     @show
 
