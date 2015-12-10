@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.13.0":
+        added:
+            - Keyboard shortcut <code>F1</code>, which will open the documentation of AsgardCms.
     "1.12.1":
         changed:
             - Extracting the Asgard javascript global definition to a partial
