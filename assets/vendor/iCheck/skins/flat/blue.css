@@ -27,6 +27,12 @@
     .icheckbox_flat-blue.checked.disabled {
         background-position: -66px 0;
     }
+    .icheckbox_flat-blue.indeterminate {
+        background-position: -176px 0;
+    }
+    .icheckbox_flat-blue.indeterminate.disabled {
+        background-position: -198px 0;
+    }
 
 .iradio_flat-blue {
     background-position: -88px 0;
