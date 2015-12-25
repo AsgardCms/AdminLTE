@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.15.0":
+        added:
+            - Adding simpleMDE editor
     "1.14.0":
         added:
             - Adding meta tag with csrf token
