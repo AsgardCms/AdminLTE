@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.14.0":
+        added:
+            - Adding meta tag with csrf token
     "1.13.0":
         added:
             - Keyboard shortcut <code>F1</code>, which will open the documentation of AsgardCms.
