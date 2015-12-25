@@ -8,6 +8,7 @@
         {{ Setting::get('core::site-name') }} | Admin
         @show
     </title>
+    <meta id="token" name="token" value="{{ csrf_token() }}" />
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     @foreach($cssFiles as $css)
         <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset($css) }}">
