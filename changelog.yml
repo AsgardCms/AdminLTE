@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "1.15.1":
+        changed:
+            - Setting CkEditor config <code>config.allowedContent</code> to true, allowing classes to be added
     "1.15.0":
         added:
             - Adding simpleMDE editor
