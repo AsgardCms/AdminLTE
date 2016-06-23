@@ -33,9 +33,11 @@ footer.main-footer p.text-muted {
 .skin-blue .left-side {
   background: #202227;
 }
-.skin-blue .sidebar-menu > li.header {
+.skin-blue .sidebar-menu > li.menu-title {
   color: #93AFBB;
   background: #25272d;
+  padding: 10px 25px 10px 15px;
+  font-size: 12px;
 }
 .sidebar-menu .append {
   margin-top: -44px;
