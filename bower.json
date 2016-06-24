@@ -21,7 +21,8 @@
     "animate.css": ">=3.4",
     "datatables.net": "~1.10.10",
     "datatables.net-bs": "~1.10.10",
-    "simplemde": "~1.9.0"
+    "simplemde": "~1.9.0",
+    "clipboard": "~1.5.10"
   },
   "resolutions": {
     "jquery": "~1.9.1"
