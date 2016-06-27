@@ -51,6 +51,10 @@ footer.main-footer p.text-muted {
   background: none;
   border: 0;
 }
+.sidebar-mini.sidebar-collapse .sidebar-menu a.append,
+.sidebar-mini.sidebar-collapse .sidebar-menu li.menu-title {
+  display: none;
+}
 .skin-blue .main-header .logo {
   border-bottom: 1px solid #202227;
 }
