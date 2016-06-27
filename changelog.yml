@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/AdminLTE
 versions:
+    "2.0@unreleased":
+        added:
+            - Manual notifications partial, to remove laracasts/flash
     "1.15.1":
         changed:
             - Setting CkEditor config <code>config.allowedContent</code> to true, allowing classes to be added
