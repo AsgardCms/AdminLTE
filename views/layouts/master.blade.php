@@ -45,7 +45,7 @@
 
         <!-- Main content -->
         <section class="content">
-            @include('flash::message')
+            @include('partials.notifications')
             @yield('content')
         </section><!-- /.content -->
     </aside><!-- /.right-side -->
