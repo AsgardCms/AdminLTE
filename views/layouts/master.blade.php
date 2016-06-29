@@ -70,6 +70,12 @@
     </script>
 <?php endif; ?>
 
+<script>
+    $.ajaxSetup({
+        headers: { 'Authorization': 'Bearer {{ $currentUser->getFirstApiKey() }}' }
+    });
+</script>
+
 @section('scripts')
 @show
 </body>
