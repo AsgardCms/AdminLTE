@@ -18,6 +18,13 @@
     @section('styles')
     @show
 
+    <script>
+        $.ajaxSetup({
+            headers: { 'Authorization': 'Bearer {{ $currentUser->getFirstApiKey() }}' }
+        });
+        var AuthorizationHeaderValue = 'Bearer {{ $currentUser->getFirstApiKey() }}';
+    </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -69,12 +76,6 @@
         });
     </script>
 <?php endif; ?>
-
-<script>
-    $.ajaxSetup({
-        headers: { 'Authorization': 'Bearer {{ $currentUser->getFirstApiKey() }}' }
-    });
-</script>
 
 @section('scripts')
 @show
