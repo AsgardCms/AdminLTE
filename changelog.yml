@@ -3,6 +3,7 @@ versions:
     "2.0@unreleased":
         added:
             - Manual notifications partial, to remove laracasts/flash
+            - Setting the Authorization header for all ajax calls in the backend. Using the logged in first api key.
     "1.15.1":
         changed:
             - Setting CkEditor config <code>config.allowedContent</code> to true, allowing classes to be added
