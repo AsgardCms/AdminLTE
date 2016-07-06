@@ -77,6 +77,15 @@
     </script>
 <?php endif; ?>
 
+<?php if (config('asgard.core.core.ckeditor-config-file-path') !== ''): ?>
+    <script>
+        $('.ckeditor').each(function() {
+            CKEDITOR.replace($(this).attr('name'), {
+                customConfig: '{{ config('asgard.core.core.ckeditor-config-file-path') }}'
+            });
+        });
+    </script>
+<?php endif; ?>
 @section('scripts')
 @show
 </body>
