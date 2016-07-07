@@ -5,6 +5,8 @@ versions:
             - Manual notifications partial, to remove laracasts/flash
             - Setting the Authorization header for all ajax calls in the backend. Using the logged in first api key.
             - Adding configuration to set a custom ckeditor config file
+        removed:
+            - Removed sisyphus usage
     "1.15.1":
         changed:
             - Setting CkEditor config <code>config.allowedContent</code> to true, allowing classes to be added
