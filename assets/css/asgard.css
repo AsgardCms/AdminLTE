@@ -36,7 +36,7 @@ ul.notifications-list li {
   border: 1px solid #eee;
   padding: 3px;
   border-radius: 3px;
-  cursor: grab;
+  vertical-align: bottom;
 }
 .jsThumbnailImageWrapper i.removeIcon {
   position: absolute;
