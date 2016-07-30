@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>
         @section('title')
-        {{ Setting::get('core::site-name') }} | Admin
+        {{ setting('core::site-name') }} | Admin
         @show
     </title>
     <meta id="token" name="token" value="{{ csrf_token() }}" />
