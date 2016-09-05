@@ -12,7 +12,7 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": ">=4.2",
+    "font-awesome": ">=4.6",
     "admin-lte": "~2.3",
     "iCheck": "~1.0.2",
     "bootstrap": "~3.3.4",
